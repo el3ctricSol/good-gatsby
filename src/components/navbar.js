@@ -21,8 +21,11 @@ const MainNav = styled.nav`
   }
 `
 
+import './navbar.css'
+
 const Navbar = () => {
   return (
+
     <MainNav>
       <ul>
         <li><Link to="/">Zatnin</Link></li>
@@ -32,6 +35,7 @@ const Navbar = () => {
         <li><Link to="/flicks">Flick'Z</Link></li>
       </ul>
     </MainNav>
+
   )
 }
 

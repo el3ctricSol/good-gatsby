@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+
     title: 'Good Gatsby',
   },
   plugins: ['gatsby-plugin-react-helmet',
@@ -14,4 +15,5 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp'
   ],
+
 }
