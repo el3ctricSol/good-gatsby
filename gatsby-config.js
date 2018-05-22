@@ -1,8 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: 'This is a Pretty Good Gatsby',
+
+    title: 'Good Gatsby',
   },
-  plugins:
-    ['gatsby-plugin-react-helmet'],
+  plugins: ['gatsby-plugin-react-helmet',
+    'gatsby-plugin-styled-components',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'img',
+        path: `${__dirname}/src/images`
+      }
+    },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp'
+  ],
 
 }
